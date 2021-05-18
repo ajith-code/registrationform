@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>my first page</title>
+<style>
+	body{
+		padding-left:50px; 
+		padding-right:50px;
+		padding-top: 100px;
+		padding-bottom: 50px;
+	    }
+.registration
+       {
+	   text-align: center;
+	   font-size: 30px;
+       }
+.reg
+      {
+	   background-color: purple;
+	   padding-right: 30px;
+	   padding-bottom:20px;
+	   padding-top:20px;
+	   padding-left:30px;
+	   border-bottom: 10px;
+       }
+	
+	#firstname,#lastname,#password,#conform,#mailid,#mobile,#dob
+	   {
+	   width:300px;
+	   text-align: center;
+	   height:30px;
+	   font-size:15px;
+	   border-left:none;
+	   border-top:none;
+	   border-right:none;
+	   border-bottom: solid black;
+	   background-color: purple;
+	   color:#0000ff;
+       }
+    #form1
+       {
+	   text-align: center;
+	   height:30px;
+	   font-size:15px;
+       }
+
+</style>
+<script type="text/javascript">
+	  function registervalidation() 
+	  {
+	  var a=document.getElementById("firstname").value;
+	  if(a=="")
+	  {
+	  alert("please enter the firstname");
+	  return false;
+	  }
+	  var b=document.getElementById("lastname").value;
+	  if(b=="")
+	  {
+	  alert("please enter the lastname");
+	  return false;
+	  }
+	  var c=document.getElementById("mailid").value;
+	  if(c=="")
+	  {
+	  alert("please enter the mailid");
+	  return false;
+	  }
+	  var d=document.getElementById("password").value;
+	  if(d=="")
+	  {
+	  alert("please enter the password");
+	  return false;
+	  }
+	  var e=document.getElementById("conform").value;
+	  if(e=="")
+	  {
+	  alert("please enter the conform password");
+	  return false;
+	  }
+	  var f=document.getElementById("mobile").value;
+	  if((e=="")&&(e==10))
+	  {
+	  alert("please enter the valid mobile number");
+	  return false;
+	  }
+	  var g=document.getElementById("dob").value;
+	  if(e=="")
+	  {
+	  alert("please enter the dob");
+	  return false;
+	  }
+      }
+
+
+
+</script>
+</head>
+<body>
+<form>
+<div class="registration">
+<div class="reg">
+<h1>Registration Form</h1>
+<input id="firstname" type="text" placeholder="Enter your Firstname"><br><br>
+<input id="lastname"type="text" placeholder="Enter your Lastname"><br><br>
+<input id="mailid"type="text" placeholder="Enter your Mail id"><br><br>
+<input id="password"type="password" placeholder="Enter the Password"><br><br>
+<input id="conform"type="passwod" placeholder="conform Password"><br><br>
+<input id="mobile"type="number" placeholder="Enter your mobile number"><br><br>
+<input id="dob"type="DOB" placeholder="Enter your DOB"><br><br>
+<input id="form1"type="button" value="Register" onclick="registervalidation()">
+</div></div>
+</form>
+</body>
+</html>
+
